@@ -1,0 +1,60 @@
+# .rubocop.yml
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  Exclude:
+    - 'config/**/*'
+    - 'db/schema.rb'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+
+# Layout/LineLength: Enforces a maximum line length.
+Layout/LineLength:
+  Max: 120
+
+# Style/StringLiterals: Enforces the use of single or double quotes for strings.
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+# Metrics/MethodLength: Limits the length of a method.
+Metrics/MethodLength:
+  Max: 10
+
+# Metrics/BlockLength: Limits the length of a block.
+Metrics/BlockLength:
+  Max: 25
+
+# Style/Documentation: Requires top-level documentation for classes and modules.
+Style/Documentation:
+  Enabled: false
+
+# Style/FrozenStringLiteralComment: Enforces or requires the use of the `frozen_string_literal` comment.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Style/IndentationConsistency: Ensures consistent indentation.
+Style/IndentationConsistency:
+  Enabled: true
+
+# Style/HashSyntax: Enforces hash syntax style.
+Style/HashSyntax:
+  EnforcedStyle: ruby19
+
+# Layout/TrailingWhitespace: Disallows trailing whitespace.
+Layout/TrailingWhitespace:
+  Enabled: true
+
+# Layout/EmptyLineBetweenDefs: Enforces empty lines between method definitions.
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+
+# Naming/PredicateName: Enforces a consistent naming for predicate methods.
+Naming/PredicateName:
+  Enabled: true
+
+# Style/OptionalArguments: Ensures consistent use of optional arguments.
+Style/OptionalArguments:
+  Enabled: true
