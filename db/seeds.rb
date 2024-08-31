@@ -1,6 +1,19 @@
+# frozen_string_literal: true
+
+A_VALID_NAME = 'a post name'
+ANOTHER_VALID_NAME = 'another post name'
+A_DESCRIPTION = <<~TEXT
+  Aute minim occaecat laborum in irure consectetur proident pariatur elit nisi et aliquip.
+  Sit anim ut ut et excepteur ea Lorem irure amet enim fugiat.
+  Ut minim ex ipsum reprehenderit consectetur eiusmod minim Lorem quis amet reprehenderit.
+  Duis aliquip dolor dolor aliquip dolore magna id deserunt officia exercitation ea aliqua dolor.
+TEXT
+
 posts = [
-  { name: "a post" , description: "Eu veniam in sit proident aute sint laborum nostrud commodo nisi commodo veniam minim quis. Irure et esse culpa culpa dolore laborum occaecat dolor sunt eiusmod commodo excepteur do anim. Velit proident nulla officia officia. Nisi enim aute et ipsum est nisi sunt proident do eiusmod. Sit commodo nisi laborum anim consequat ullamco incididunt. Id Lorem tempor labore deserunt irure ad pariatur duis laboris et."},
-  { name: "other post" , description: "Eu veniam in sit proident aute sint laborum nostrud commodo nisi commodo veniam minim quis. Irure et esse culpa culpa dolore laborum occaecat dolor sunt eiusmod commodo excepteur do anim. Velit proident nulla officia officia. Nisi enim aute et ipsum est nisi sunt proident do eiusmod. Sit commodo nisi laborum anim consequat ullamco incididunt. Id Lorem tempor labore deserunt irure ad pariatur duis laboris et."},
+  { name: A_VALID_NAME,
+    description: A_DESCRIPTION },
+  { name: ANOTHER_VALID_NAME,
+    description: A_DESCRIPTION }
 ]
 
 posts.each do |post|
