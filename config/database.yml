@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  database: posts_handler_api_development
+  database: tcit_challenge_api_development
   username: <%= ENV["DATABASE_USER"] %>
   password: <%= ENV["DATABASE_PASSWORD"] %>
 
@@ -29,7 +29,7 @@ development:
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: posts_handler_api
+  #username: tcit_challenge_api
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: posts_handler_api_test
+  database: tcit_challenge_api_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: posts_handler_api_production
-  username: posts_handler_api
-  password: <%= ENV["POSTS_HANDLER_API_DATABASE_PASSWORD"] %>
+  database: tcit_challenge_api_production
+  username: tcit_challenge_api
+  password: <%= ENV["tcit_challenge_api_DATABASE_PASSWORD"] %>
